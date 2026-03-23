@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "dgSpecHash": "nG3LyPC5+6M=",
+  "success": true,
+  "projectFilePath": "/Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/VideoIdeas.csproj",
+  "expectedPackageFiles": [
+    "/Users/kieranleleux/.nuget/packages/azure.core/1.40.0/azure.core.1.40.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/azure.identity/1.12.0/azure.identity.1.12.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/microsoft.data.sqlclient/5.2.0/microsoft.data.sqlclient.5.2.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.2.0/microsoft.data.sqlclient.sni.runtime.5.2.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/microsoft.identity.client/4.61.3/microsoft.identity.client.4.61.3.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/microsoft.identity.client.extensions.msal/4.61.3/microsoft.identity.client.extensions.msal.4.61.3.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/microsoft.identitymodel.abstractions/6.35.0/microsoft.identitymodel.abstractions.6.35.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.35.0/microsoft.identitymodel.jsonwebtokens.6.35.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/microsoft.identitymodel.logging/6.35.0/microsoft.identitymodel.logging.6.35.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/microsoft.identitymodel.protocols/6.35.0/microsoft.identitymodel.protocols.6.35.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.35.0/microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/microsoft.identitymodel.tokens/6.35.0/microsoft.identitymodel.tokens.6.35.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/system.clientmodel/1.0.0/system.clientmodel.1.0.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/system.configuration.configurationmanager/8.0.0/system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/system.identitymodel.tokens.jwt/6.35.0/system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/system.memory.data/1.0.2/system.memory.data.1.0.2.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/system.runtime.caching/8.0.0/system.runtime.caching.8.0.0.nupkg.sha512",
+    "/Users/kieranleleux/.nuget/packages/system.security.cryptography.protecteddata/8.0.0/system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Une erreur s’est produite lors de l’obtention des données de vulnérabilité du package\u00A0: Access to the path '/Users/kieranleleux/.local/share' is denied.",
+      "projectPath": "/Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/VideoIdeas.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/VideoIdeas.csproj",
+      "targetGraphs": []
+    }
+  ]
+}
