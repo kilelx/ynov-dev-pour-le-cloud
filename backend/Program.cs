@@ -15,7 +15,14 @@ app.UseDefaultFiles();
 app.UseStaticFiles();
 
 // Crée la table si elle n'existe pas
-await EnsureTableAsync(builder.Configuration.GetConnectionString("AzureSQL")!);
+try
+{
+    await EnsureTableAsync(builder.Configuration.GetConnectionString("AzureSQL")!);
+}
+catch (Exception ex)
+{
+    app.Logger.LogError(ex, "Impossible de créer la table au démarrage.");
+}
 
 app.MapPost("/api/ideas", async (VideoIdeaRequest request, IConfiguration config) =>
 {
