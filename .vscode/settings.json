@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "backend/bin/Release/net8.0/publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/5fc9a412-5eed-4088-b038-e253a13c79e9/resourceGroups/dev-pour-cloud_group/providers/Microsoft.Web/sites/dev-pour-cloud"
+}
