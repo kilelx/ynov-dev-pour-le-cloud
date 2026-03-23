@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumettre une idée de vidéo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f4f4f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding: 2.5rem;
+      width: 100%;
+      max-width: 520px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: #18181b;
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      color: #71717a;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+
+    label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #3f3f46;
+      margin-bottom: 0.4rem;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      border: 1.5px solid #e4e4e7;
+      border-radius: 8px;
+      padding: 0.65rem 0.85rem;
+      font-size: 0.95rem;
+      color: #18181b;
+      transition: border-color 0.2s;
+      outline: none;
+      font-family: inherit;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
+
+    .field {
+      margin-bottom: 1.5rem;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      background: #6366f1;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button[type="submit"]:hover {
+      background: #4f46e5;
+    }
+
+    .success, .error {
+      display: none;
+      margin-top: 1.25rem;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .success {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #15803d;
+    }
+
+    .error {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      color: #b91c1c;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Soumettre une idée de vidéo</h1>
+    <p class="subtitle">Partagez votre idée en quelques mots.</p>
+
+    <form id="idea-form">
+      <div class="field">
+        <label for="title">Titre de la vidéo</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Ex : Comment apprendre le cloud en 30 jours"
+          required
+          maxlength="120"
+        >
+      </div>
+
+      <div class="field">
+        <label for="idea">Idée principale</label>
+        <textarea
+          id="idea"
+          name="idea"
+          placeholder="Décrivez brièvement le concept, l'angle ou le message clé de la vidéo…"
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit">Envoyer l'idée</button>
+
+      <div class="success" id="success-msg">
+        Merci ! Votre idée a bien été soumise.
+      </div>
+      <div class="error" id="error-msg"></div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('idea-form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const btn = this.querySelector('button[type="submit"]');
+      const msg = document.getElementById('success-msg');
+      const err = document.getElementById('error-msg');
+
+      btn.disabled = true;
+      btn.textContent = 'Envoi…';
+      msg.style.display = 'none';
+      err.style.display = 'none';
+
+      try {
+        const res = await fetch('/api/ideas', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            title: document.getElementById('title').value,
+            idea:  document.getElementById('idea').value
+          })
+        });
+
+        if (!res.ok) throw new Error(await res.text());
+
+        msg.style.display = 'block';
+        this.reset();
+      } catch (ex) {
+        err.textContent = 'Erreur : ' + ex.message;
+        err.style.display = 'block';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = "Envoyer l'idée";
+      }
+    });
+  </script>
+</body>
+</html>

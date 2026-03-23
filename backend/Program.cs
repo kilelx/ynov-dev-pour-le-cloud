@@ -11,6 +11,8 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 app.UseCors();
+app.UseDefaultFiles();
+app.UseStaticFiles();
 
 // Crée la table si elle n'existe pas
 await EnsureTableAsync(builder.Configuration.GetConnectionString("AzureSQL")!);
