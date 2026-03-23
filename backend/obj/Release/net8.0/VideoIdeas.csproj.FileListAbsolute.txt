@@ -64,3 +64,8 @@
 /Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/obj/Release/net8.0/VideoIdeas.pdb
 /Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/obj/Release/net8.0/VideoIdeas.genruntimeconfig.cache
 /Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/obj/Release/net8.0/ref/VideoIdeas.dll
+/Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/bin/Release/net8.0/publish/web.config
+/Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/bin/Release/net8.0/publish/appsettings.json
+/Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/bin/Release/net8.0/publish/VideoIdeas.deps.json
+/Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/bin/Release/net8.0/publish/VideoIdeas.runtimeconfig.json
+/Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/bin/Release/net8.0/publish/VideoIdeas.staticwebassets.endpoints.json

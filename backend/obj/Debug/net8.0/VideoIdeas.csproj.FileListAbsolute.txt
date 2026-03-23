@@ -1,4 +1,9 @@
+/Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/bin/Debug/net8.0/publish/web.config
 /Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/bin/Debug/net8.0/appsettings.json
+/Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/bin/Debug/net8.0/publish/appsettings.json
+/Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/bin/Debug/net8.0/publish/VideoIdeas.deps.json
+/Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/bin/Debug/net8.0/publish/VideoIdeas.runtimeconfig.json
+/Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/bin/Debug/net8.0/publish/VideoIdeas.staticwebassets.endpoints.json
 /Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/bin/Debug/net8.0/VideoIdeas.staticwebassets.endpoints.json
 /Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/bin/Debug/net8.0/VideoIdeas
 /Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/bin/Debug/net8.0/VideoIdeas.deps.json
@@ -48,6 +53,7 @@
 /Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/obj/Debug/net8.0/VideoIdeas.AssemblyInfo.cs
 /Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/obj/Debug/net8.0/VideoIdeas.csproj.CoreCompileInputs.cache
 /Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/obj/Debug/net8.0/VideoIdeas.MvcApplicationPartsAssemblyInfo.cache
+/Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/obj/Debug/net8.0/VideoIdeas.sourcelink.json
 /Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/obj/Debug/net8.0/rjimswa.dswa.cache.json
 /Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/obj/Debug/net8.0/rjsmrazor.dswa.cache.json
 /Users/kieranleleux/dev/ynov/dev-pour-le-cloud/backend/obj/Debug/net8.0/rjsmcshtml.dswa.cache.json
